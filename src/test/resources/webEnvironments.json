@@ -1,7 +1,12 @@
 [
   {
-    "browserName": "",
-    "version": "",
-    "platform": ""
+    "browserName": "firefox",
+    "version": "latest",
+    "platform": "macOS 10.13"
+  },
+  {
+    "browserName": "chrome",
+    "version": "latest",
+    "platform": "macOS 10.13"
   }
 ]
