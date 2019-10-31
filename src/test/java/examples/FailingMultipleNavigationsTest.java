@@ -14,9 +14,7 @@ public class FailingMultipleNavigationsTest extends BaseWebTestObject
     public void failingMultipleNavigationsTest(DesiredCapabilities capabilities) throws InterruptedException, MalformedURLException
     {
         driver.get("http://google.com");
-        Thread.sleep(5000);
         driver.get("http://bing.com");
-        Thread.sleep(5000);
         driver.get("http://google.com");
         Assert.assertTrue(driver.getCurrentUrl().equals("http://bing.com"));
     }

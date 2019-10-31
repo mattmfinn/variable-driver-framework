@@ -17,9 +17,8 @@ public class BaseWebTestObject
 {
 
     public RemoteWebDriver driver;
-    public static final String URL = "http://" + Saucelabs.USERNAME.value() + ":"
-            + Saucelabs.ACCESS_KEY.value() + "@ondemand.saucelabs.com:80/wd/hub";
-    public static final SauceREST sauceREST = new SauceREST(Saucelabs.USERNAME.value(), Saucelabs.ACCESS_KEY.value());
+    public static final String URL = Saucelabs.URL.value;
+    public static final SauceREST sauceREST = new SauceREST(Saucelabs.USERNAME.value, Saucelabs.ACCESSKEY.value);
 
     @DataProvider(name = "environments")
     public static Object[] environments()
