@@ -1,17 +1,16 @@
 package examples;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import testobjects.BaseWebTestObject;
+import objects.testobjects.BaseTestObject;
 
-import java.net.MalformedURLException;
-
-public class FailingMultipleNavigationsTest extends BaseWebTestObject
+public class FailingMultipleNavigationsTest extends BaseTestObject
 {
 
     @Test(dataProvider = "environments")
-    public void failingMultipleNavigationsTest(DesiredCapabilities capabilities) throws InterruptedException, MalformedURLException
+    public void failingMultipleNavigationsTest(DesiredCapabilities capabilities)
     {
         driver.get("http://google.com");
         driver.get("http://bing.com");

@@ -12,8 +12,8 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.testng:testng:7.0.0'
-    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'org.testng:testng:+'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-5'
     implementation 'ch.qos.logback:logback-core:1.2.3'
     implementation 'com.jwebmp.jackson.core:jackson-databind:0.66.0.1'
     implementation 'com.saucelabs:saucerest:1.0.42'

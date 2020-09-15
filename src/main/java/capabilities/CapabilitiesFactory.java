@@ -1,11 +1,9 @@
 package capabilities;
 
 import environment.EnvironmentParser;
-import jdk.nashorn.internal.parser.JSONParser;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
 
 public class CapabilitiesFactory
 {
@@ -21,7 +19,7 @@ public class CapabilitiesFactory
         try
         {
             WebCapabilities[] rawCapabilities = environmentParser.parseEnvironments(jsonEnvironments);
-            DesiredCapabilities finalCapabilities[] = new DesiredCapabilities[rawCapabilities.length];
+            DesiredCapabilities[] finalCapabilities = new DesiredCapabilities[rawCapabilities.length];
 
             int index = 0;
             for (WebCapabilities m : rawCapabilities)
